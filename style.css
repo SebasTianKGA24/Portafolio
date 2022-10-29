@@ -1,0 +1,36 @@
+body{
+    background: rgb(211,20,20);
+    background: radial-gradient(circle, rgba(211,20,20,1) 0%, rgba(0,0,0,1) 100%);
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+.link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbar a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+@media (max-width:700px){
+    header{
+        flex-direction:column;
+    }
+    .navbar{
+        padding: 10px 0px;
+    }
+}
